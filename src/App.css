@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+  --color-blk-full:    	#000000;
+  --color-wht-full:    	#ffffff;
+  
+  --color-blk-pri:   		#151515;
+  --color-blk-sec:   		#202020;
+
+  --color-wht-pri:  		#fafafa;
+  --color-wht-sec:   		#ababab;
+
+  --color-blu-pri:     	#1447e6;
+
+  --font-primary: 			"Anton", sans-serif, system-ui;
+  --font-secondary: 		"Clash Display", sans-serif, system-ui;
+}
+
+@font-face {
+  font-family: "Anton";
+  src:
+    url("/fonts/anton/regular.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src:
+    url("/fonts/clashdisplay/regular.woff2") format("woff2"),
+    url("/fonts/clashdisplay/regular.woff") format("woff");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.cursor-default       { cursor: url("/cursors/default.cur"), default; }
+.cursor-pointer       { cursor: url("/cursors/pointer.cur"), pointer; }
+.cursor-person        { cursor: url("/cursors/person.cur"), auto; }
+.cursor-help          { cursor: url("/cursors/help.cur"), help; }
+.cursor-unavailable   { cursor: url("/cursors/unavailable.cur"), not-allowed; }
+.cursor-location      { cursor: url("/cursors/location.cur"), crosshair; }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
